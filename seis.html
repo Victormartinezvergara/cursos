@@ -162,7 +162,7 @@ const mensaje = document.getElementById("mensajeCopiado");
 function copiarReferencia(metodo){
     navigator.clipboard.writeText(referencia);
 
-    mensaje.innerText = "Referencia copiada. Dirígete a " + metodo + " y completa el pago. una vez realizado el dinero sera desembolsado";
+    mensaje.innerText = "Numero de pago copiado. Dirígete a " + metodo + " y completa el pago. una vez realizado el dinero sera desembolsado";
     mensaje.classList.add("mostrar");
 
     setTimeout(() => {
