@@ -144,7 +144,7 @@ input::placeholder {
             <input type="text" id="numero" placeholder="Ingresa tu número" pattern="[0-9]+" required>
         </div>
 
-        <button type="submit" class="boton"><a href="cinco.html" style="color: white; text-decoration: none;">Enviar dinero</a></button>
+        <button type="submit" class="boton"><a href="cinco.html" style="color: white; text-decoration: none; padding: 20px;">Enviar dinero</a></button>
     </form>
 
     <div class="sorpresa" id="mensajeSorpresa" style="display:none;"></div>
@@ -163,7 +163,7 @@ input::placeholder {
         const metodo = document.getElementById('metodo').value;
         const numero = document.getElementById('numero').value;
 
-        mensaje.textContent = `¡Perfecto! Tu dinero será enviado a tu cuenta ${metodo} terminada en ${numero.slice(-4)} 💸`;
+        mensaje.textContent = 
         mensaje.style.display = 'block';
         form.reset();
     });
